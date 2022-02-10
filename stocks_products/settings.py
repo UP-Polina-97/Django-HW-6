@@ -1,3 +1,4 @@
+
 """
 Django settings for stocks_products project.
 
@@ -11,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import os 
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -26,7 +28,7 @@ SECRET_KEY = 'django-insecure-nw^y+m^wmxza1asgk+)!ua2qx9)g+#v=6%76-9i8i(6eqiw94j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['89.108.77.107']
 
 
 # Application definition
@@ -82,9 +84,9 @@ WSGI_APPLICATION = 'stocks_products.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'netology_stocks_products',
-        'USER': '',
-        'PASSWORD': '',
+        'NAME': 'demodb',
+        'USER': 'stocks',
+        'PASSWORD': os.getenv('DB_PASSWORD'),
     }
 }
 
