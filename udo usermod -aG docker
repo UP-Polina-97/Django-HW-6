@@ -1,0 +1,21 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Mon 2022-02-14 11:32:01 MSK; 8s ago
+TriggeredBy: [0;1;32m●[0m docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 2577 (dockerd)
+      Tasks: 7
+     Memory: 30.4M
+     CGroup: /system.slice/docker.service
+             └─2577 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Feb 14 11:32:01 89-108-77-107.cloudvps.regruhosting.ru dockerd[2577]: time="2022-02-14T11:32:01.113823257+03:00" level=warning msg="Your kernel does not support CPU realtime scheduler"
+Feb 14 11:32:01 89-108-77-107.cloudvps.regruhosting.ru dockerd[2577]: time="2022-02-14T11:32:01.113951678+03:00" level=warning msg="Your kernel does not support cgroup blkio weight"
+Feb 14 11:32:01 89-108-77-107.cloudvps.regruhosting.ru dockerd[2577]: time="2022-02-14T11:32:01.114096292+03:00" level=warning msg="Your kernel does not support cgroup blkio weight_device"
+Feb 14 11:32:01 89-108-77-107.cloudvps.regruhosting.ru dockerd[2577]: time="2022-02-14T11:32:01.114385727+03:00" level=info msg="Loading containers: start."
+Feb 14 11:32:01 89-108-77-107.cloudvps.regruhosting.ru dockerd[2577]: time="2022-02-14T11:32:01.238640317+03:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Feb 14 11:32:01 89-108-77-107.cloudvps.regruhosting.ru dockerd[2577]: time="2022-02-14T11:32:01.322942747+03:00" level=info msg="Loading containers: done."
+Feb 14 11:32:01 89-108-77-107.cloudvps.regruhosting.ru dockerd[2577]: time="2022-02-14T11:32:01.366667518+03:00" level=info msg="Docker daemon" commit=459d0df graphdriver(s)=overlay2 version=20.10.12
+Feb 14 11:32:01 89-108-77-107.cloudvps.regruhosting.ru dockerd[2577]: time="2022-02-14T11:32:01.367185517+03:00" level=info msg="Daemon has completed initialization"
+Feb 14 11:32:01 89-108-77-107.cloudvps.regruhosting.ru systemd[1]: Started Docker Application Container Engine.
+Feb 14 11:32:01 89-108-77-107.cloudvps.regruhosting.ru dockerd[2577]: time="2022-02-14T11:32:01.426038544+03:00" level=info msg="API listen on /run/docker.sock"
